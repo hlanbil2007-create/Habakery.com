@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - HA Bakery</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+  <div class="navbar-left">
+    <a href="index.html" class="logo">HA BAKERY</a>
+  </div>
+  <ul class="navbar-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#menu">Menu</a></li>
+    <li><a href="index.html#offers">Offers</a></li>
+    <li><a href="index.html#contact">Contact Us</a></li>
+  </ul>
+  <a href="cart.html" class="cart-icon">Cart</a>
+</nav>
+
+<div class="hero-content">
+
+<p class="welcome">Checkout</p>
+
+<h1 class="h1">
+Complete Your Order
+</h1>
+
+</div>
+
+</header>
+
+<section class="checkout-section">
+  <a href="index.html" class="back-link">← Back to Bakery</a>
+  <div class="checkout-content">
+    <div class="checkout-form-panel">
+      <h2>Delivery Details</h2>
+      <form id="checkout-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+        <label for="address">Shipping Address</label>
+        <textarea id="address" placeholder="Enter your full address" required></textarea>
+
+        <label for="city">City</label>
+        <input type="text" id="city" placeholder="City" required>
+
+        <label for="special-instructions">Special Instructions (optional)</label>
+        <textarea id="special-instructions" placeholder="Any notes for the bakery?"></textarea>
+
+        <h2>Payment Method</h2>
+        <div class="payment-methods">
+          <label class="payment-option">
+            <input type="radio" name="payment" value="cod" checked>
+            Cash on Delivery
+          </label>
+        </div>
+
+        <button type="submit" id="place-order-btn">Place Order</button>
+      </form>
+    </div>
+
+    <aside class="order-summary">
+      <h2>Order Summary</h2>
+      <div id="order-items" class="order-items"></div>
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="summary-subtotal">0 L.e</span>
+      </div>
+      <div class="summary-row">
+        <span>Shipping</span>
+        <span id="summary-shipping">25 L.e</span>
+      </div>
+      <div class="summary-row total-row">
+        <span>Total</span>
+        <span id="summary-total">0 L.e</span>
+      </div>
+
+      <div class="summary-footer">
+        <div class="summary-note">
+          <strong>✔</strong> Delivery within 45-60 minutes
+        </div>
+        <div class="summary-note">
+          <strong>🔒</strong> Secure checkout guaranteed
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<script src="checkout.js"></script>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p>📞 +20 10 9946385012</p>
+      <p>✉️ halaaarwa@gmail.com</p>
+      <p>📍 9th street maadi, Cairo, egypt</p>
+    </div>
+    <div class="footer-col">
+      <h3>Explore</h3>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#menu">Menu</a></li>
+        <li><a href="index.html#offers">Offers</a></li>
+        <li><a href="index.html#contact">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026. All rights reserved to Hala & Arwa</div>
+</footer>
+
+</body>
+</html>

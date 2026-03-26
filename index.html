@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HA Bakery</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+  <div class="navbar-left">
+    <a href="index.html" class="logo">HA BAKERY</a>
+  </div>
+  <ul class="navbar-menu">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="index.html#menu">Menu</a></li>
+    <li><a href="index.html#offers">Offers</a></li>
+    <li><a href="index.html#contact">Contact Us</a></li>
+  </ul>
+  <a href="cart.html" class="cart-icon" id="cart-icon">Cart <span id="cart-count">0</span></a>
+</nav>
+
+<div class="hero-content">
+
+<p class="welcome">Welcome to HA Bakery</p>
+
+<h1 class="h1">
+Sweet Treats,<br>
+Perfect Eats
+</h1>
+
+<div class="buttons">
+<button class="shop">Shop Now</button>
+<a href="#" class="learn">Learn More</a>
+</div>
+
+</div>
+
+</header>
+
+<section class="products">
+
+<h2 class="h2card">Top Products</h2>
+
+<div class="products-grid">
+
+<div class="product-card">
+<img src="photos/grain-bread.png">
+<div class="product-info">
+  <p class="description">soft, airy cloud wrapped in a crunchy or golden shell.</p>
+<div class="price-row">
+<p>Whole Grain Bread</p>
+<span>90 L.e</span>
+<button class="add-btn" data-name="Whole Grain Bread" data-price="90">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card">
+<img src="photos/berry-danish.png">
+<div class="product-info">
+  <p class="description">a crisp base, a creamy filling, and fresh, bright fruit.</p>
+<p>Pastry cross</p>
+<div class="price-row">
+<span>90 L.e</span>
+<button class="add-btn" data-name="Pastry cross" data-price="90">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card">
+<img src="photos/product6.png">
+<div class="product-info">
+  <p class="description">fancy, buttery bread" that’s closer to a croissant than a standard loaf.</p>
+<p>Danash</p>
+<div class="price-row">
+<span>90 L.e</span>
+<button class="add-btn" data-name="Danash" data-price="90">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card">
+<img src="photos/product5.png">
+<div class="product-info">
+<p class="description">Buttery and crispy French croissant, perfect with coffee or as a snack.</p>
+<p>Croissant</p>
+<div class="price-row">
+<span>50 L.e</span>
+<button class="add-btn" data-name="Croissant" data-price="50">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card">
+<img src="photos/jam-pastry.png">
+<div class="product-info">
+<p class="description">Light pastry filled with strawberry jam, a sweet and simple delight.</p>
+<p>Jam Pastry</p>
+<div class="price-row">
+<span>60 L.e</span>
+<button class="add-btn" data-name="Jam Pastry" data-price="60">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card">
+<img src="photos/grain-bun.png">
+<div class="product-info">
+<p class="description">Soft grain bun made with whole grains, great for burgers or sandwiches.</p>
+<p>Grain Bun</p>
+<div class="price-row">
+<span>40 L.e</span>
+<button class="add-btn" data-name="Grain Bun" data-price="40">Add</button>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="offers" class="offer-section">
+    <div class="offer-content">
+
+        <h1>20% Off on Your First Order</h1>
+
+        <p>Enjoy exclusive in-store discounts<br>at Maadi branch</p>
+
+        <button id="offerBtn">Learn More</button>
+
+    </div>
+
+</section>
+
+<section class="menu" id="menu">
+
+<h2 class="h2card">Our Menu</h2>
+
+<div class="products-grid">
+
+<div class="product-card cake">
+<img src="photos/cheese sandwish.png">
+<div class="product-info">
+<p>Cheese
+  sandwish
+</p>
+<div class="price-row">
+<span>150 L.e</span>
+<button class="add-btn" data-name="Cheese sandwish" data-price="150">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card cake">
+<img src="photos/croisant2.png">
+<div class="product-info">
+<p>Croissant 2</p>
+<div class="price-row">
+<span>160 L.e</span>
+<button class="add-btn" data-name="Croissant 2" data-price="160">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card cake">
+<img src="photos/classic glazed donut.png">
+<div class="product-info">
+<p>Glazed donut</p>
+<div class="price-row">
+<span>170 L.e</span>
+<button class="add-btn" data-name="Glazed donut" data-price="170">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card cake">
+<img src="photos/choco.png">
+<div class="product-info">
+
+<p>Chocolate donut</p>
+<div class="price-row">
+<span>180 L.e</span>
+<button class="add-btn" data-name="Chocolate donut" data-price="180">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card cake">
+<img src="photos/redvelvet.png">
+<div class="product-info">
+
+<p>red velvet cake</p>
+<div class="price-row">
+<span>190 L.e</span>
+<button class="add-btn" data-name="Red Velvet Cake" data-price="190">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card cake">
+<img src="photos/cake6.jpg">
+<div class="product-info">
+<p>vanila cake</p>
+<div class="price-row">
+<span>200 L.e</span>
+<button class="add-btn" data-name="Vanila Cake" data-price="200">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card muffin">
+<img src="photos/muffin1.jpg">
+<div class="product-info">
+
+<p>Muffin </p>
+<div class="price-row">
+<span>25 L.e</span>
+<button class="add-btn" data-name="Muffin" data-price="25">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card muffin">
+<img src="photos/cookies.png">
+<div class="product-info">
+<p>cookies</p>
+<div class="price-row">
+<span>26 L.e</span>
+<button class="add-btn" data-name="Cookies" data-price="26">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card muffin">
+<img src="photos/potatoe sandwish.png">
+<div class="product-info">
+<p>Potato Sandwich</p>
+<div class="price-row">
+<span>27 L.e</span>
+<button class="add-btn" data-name="Potato Sandwich" data-price="27">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card muffin">
+<img src="photos/turkey sandwish.png">
+<div class="product-info">
+<p>Turkey Sandwich</p>
+<div class="price-row">
+<span>28 L.e</span>
+<button class="add-btn" data-name="Turkey Sandwich" data-price="28">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card muffin">
+<img src="photos/choco cake.png">
+<div class="product-info">
+<p>Chocolate Cake</p>
+<div class="price-row">
+<span>29 L.e</span>
+<button class="add-btn" data-name="Chocolate Cake" data-price="29">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card muffin">
+<img src="photos/brownie.png">
+<div class="product-info">
+<p>waffel</p>
+<div class="price-row">
+<span>30 L.e</span>
+<button class="add-btn" data-name="Waffel" data-price="30">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card bread">
+<img src="photos/bread.png">
+<div class="product-info">
+<p>pack of 3 loafs</p>
+<div class="price-row">
+<span>80 L.e</span>
+<button class="add-btn" data-name="Pack of 3 Loafs" data-price="80">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card bread">
+<img src="photos/breadooo.png">
+<div class="product-info">
+<p>souredough</p>
+<div class="price-row">
+<span>85 L.e</span>
+<button class="add-btn" data-name="Souredough" data-price="85">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card bread hidden">
+<img src="photos/grain-bread.png">
+<div class="product-info">
+<p>Baguette</p>
+<div class="price-row">
+<span>90 L.e</span>
+<button class="add-btn" data-name="Baguette" data-price="90">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card bread hidden">
+<img src="photos/sourdough.png">
+<div class="product-info">
+<p>souredough2</p>
+<div class="price-row">
+<span>95 L.e</span>
+<button class="add-btn" data-name="Souredough 2" data-price="95">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card bread hidden">
+<img src="photos/bo8asha.png">
+<div class="product-info">
+<p>golash</p>
+<div class="price-row">
+<span>100 L.e</span>
+<button class="add-btn" data-name="Golash" data-price="100">Add</button>
+</div>
+</div>
+</div>
+
+<div class="product-card bread hidden">
+<img src="photos/baclava.png">
+<div class="product-info">
+<p>bo8asha</p>
+<div class="price-row">
+<span>105 L.e</span>
+<button class="add-btn" data-name="Bo8asha" data-price="105">Add</button>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+<footer>
+<p>&copy; 2026 Copyright Hala & Arwa. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
